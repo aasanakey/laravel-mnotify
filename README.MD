@@ -7,7 +7,7 @@
 You can install the package via composer:
 
 ``` bash
-composer require laravel-notification-channels/mnotify
+composer require sanakey/laravel-mnotify
 ```
 
 First you must install the service provider (skip for Laravel>=5.5):
@@ -28,7 +28,7 @@ class User extends Model
 {
      public function routeNotificationForMnotify()
     {
-        return $this->contact;
+        return $this->contact;  // returns a contact number eg 0301045697
     }
 }
 ```
@@ -44,10 +44,13 @@ or
 php artisan vendor:publish --provider="Sanakey\Mnotify\MnotifyServiceProvider" --tag="mnotify-config"
 ```
 
-Add your mnotify api key 
+Add your mnotify api key
+```
 Set your mnotify api keys  .env file
-MNOTIFY_SMS_API_KEY
-MNOTIFY_APIV2_KEY
+MNOTIFY_SMS_API_KEY=your mnotify SMS API key
+
+MNOTIFY_APIV2_KEY=your mnotify API V2 key
+```
 Add your Mnotify SMS API Key and API V2 Key to your `config/mnotify.php`:
 
 ```php
@@ -56,6 +59,7 @@ Add your Mnotify SMS API Key and API V2 Key to your `config/mnotify.php`:
 'sms_api_key' => env('MNOTIFY_SMS_API_KEY'),
 'api_v2_key' => env('MNOTIFY_APIV2_KEY'),
 ...
+```
 
 ## Usage
 
