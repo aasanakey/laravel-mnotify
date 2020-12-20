@@ -14,7 +14,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Sanakey\\Mnotify": "src/"
+            "Sanakey\\Mnotify\\": "src/"
         }
     },
     "autoload-dev": {
