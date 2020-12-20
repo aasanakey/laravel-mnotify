@@ -1,0 +1,32 @@
+{
+    "name": "sanakey/laravel-mnotify",
+    "description": "Send Laravel Notifications via the Mnotify SMS API",
+    "require": {
+        "php": "7.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Augustine Ayiku Sanakey",
+            "email": "sanakeyaugustineayiku@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sanakey\\Mnotify": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sanakey\\Mnotify\\MnotifyServiceProvider"
+            ]
+        }
+    }
+}
