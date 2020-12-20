@@ -20,7 +20,7 @@ First you must install the service provider (skip for Laravel>=5.5):
 ],
 ```
 
-In order to let your Notification know which phone numer you are targeting, add the routeNotificationForMnotify method to your Notifiable model.
+In order to let your Notification know which phone number you are targeting, add the routeNotificationForMnotify method to your Notifiable model.
 
 ``` php
 
@@ -95,39 +95,7 @@ $api = new SMSAPI();
 $balance =$api->checkBalance();
 ```
 
-### Delete Subscriptions
-
-To delete a subscription use the `deletePushSubscription($endpoint)` method on your user:
-
-``` php
-$user = \App\User::find(1);
-
-$user->deletePushSubscription($endpoint);
-```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information about what has changed recently.
-
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Security
-
-If you discover any security related issues, please email sa@gmail.com instead of using the issue tracker.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Credits
-
-- [Cretu Eusebiu](https://github.com/cretueusebiu)
-- [All Contributors](../../contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
