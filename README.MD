@@ -1,8 +1,11 @@
 # Laravel Mnotify Sms Api
+[![GitHub issues](https://img.shields.io/github/issues/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/issues)
+[![GitHub stars](https://img.shields.io/github/stars/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/stargazers)
+[![GitHub license](https://img.shields.io/github/license/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/blob/main/LICENSE)
 
 ## Send Laravel Notifications via the Mnotify SMS API
 
-## Installation
+## Installation 
 
 You can install the package via composer:
 
@@ -68,7 +71,7 @@ Now you can use the channel in your `via()` method inside the notification as we
 ``` php
 use Illuminate\Notifications\Notification;
 use Sanakey\Mnotify\Message;
-// use NotificationChannels\WebPush\WebPushChannel;
+
 
 class SMSNotification extends Notification
 {
