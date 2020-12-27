@@ -28,7 +28,7 @@ class MnotifyChannel{
         $sms->numbers = $number;
         $sms->sender = $payload['sender_id'];
         $response = $sms->sendMessage();
-        Log::info("Mnotify Api response => $response");
+        Log::info("Mnotify Api response => $response->code:$response->message");
         return $response;
     }
 }

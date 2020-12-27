@@ -58,13 +58,14 @@ class SMSAPI {
 
     /**
      * Send SMS using the Mnotify sms api
+     * @return stdClass
      */
     public function sendMessage()
     {
 
         $url = "$this->_endpoint?key=$this->key&to=$this->numbers&msg=$this->message&sender_id=$this->sender";
         $result = $this->initCurl($url);
-        return $result;
+        return json_decode($result);
     }
 
        /**
@@ -79,14 +80,14 @@ class SMSAPI {
     }
    
     /**
-     * @param DateTime $from Y-M-D H:s:i
-     * @param DateTime $to Y-M-D H:s:i
+     * @param \DateTime $from Y-M-D H:s:i
+     * @param \DateTime $to Y-M-D H:s:i
      */
     public function checkUsage(\DateTime $from,\DateTime  $to)
     {
         $url = "$this->usage_endpoint?key=$this->key&from=".date_format($from,'Y-M-d H:s:i')."&to=".date_format($to,'Y-M-d H:s:i');
         $result = $this->initCurl($url);
-        return $result; 
+        return json_decode($result) ; 
     }
 
     /**
