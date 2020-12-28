@@ -18,7 +18,7 @@ before_script:
   - if [ "$ORCHESTRA_VERSION" != "" ]; then composer require --dev "orchestra/testbench:${ORCHESTRA_VERSION}" --no-update; fi;  
   - composer update
 script:
-  - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
+  - vendor/bin/phpunit
 
 notifications:
   email: false
