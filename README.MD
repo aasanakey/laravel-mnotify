@@ -3,6 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/issues)
 [![GitHub stars](https://img.shields.io/github/stars/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/stargazers)
 [![GitHub license](https://img.shields.io/github/license/SanakeyAugustineAyiku/laravel-mnotify)](https://github.com/SanakeyAugustineAyiku/laravel-mnotify/blob/main/LICENSE)
+[![Build Status](https://travis-ci.com/SanakeyAugustineAyiku/laravel-mnotify.svg?branch=main)](https://travis-ci.com/SanakeyAugustineAyiku/laravel-mnotify)
 
 ## Send Laravel Notifications via the Mnotify SMS API
 
@@ -51,14 +52,15 @@ php artisan vendor:publish --provider="Sanakey\Mnotify\MnotifyServiceProvider" -
 
 Add your mnotify api key. 
 
-Set your mnotify api keys  .env file.
+Set your mnotify api keys in your .env file.
 
 ```
 MNOTIFY_SMS_API_KEY=your mnotify SMS API key
 
 MNOTIFY_APIV2_KEY=your mnotify API V2 key
 ```
-    Or
+
+Or
 
 Add your Mnotify SMS API Key and API V2 Key to your `config/mnotify.php`:
 
